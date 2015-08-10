@@ -5,3 +5,18 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+2000.times do 
+
+	Post.create(name: 'post2', content: 'asdfasdfasdfasdfasdfasd asdfasdfasdf')
+	Post.create(name: 'rafael', content: 'asdfasdfasdfasdfasdfasd asdfasdfasdf')
+	Post.create(name: 'jenny', content: 'asdfasdfasdfasdfasdfasd asdfasdfasdf')
+	Post.create(name: 'tito', content: 'asdfasdfasdfasdfasdfasd asdfasdfasdf')
+	Post.create(name: 'aleja', content: 'asdfasdfasdfasdfasdfasd asdfasdfasdf')
+	Post.create(name: 'ana', content: 'asdfasdfasdfasdfasdfasd asdfasdfasdf')
+
+
+
+
+
+	
+end

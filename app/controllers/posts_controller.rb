@@ -3,6 +3,11 @@ class PostsController < ApplicationController
 
   # GET /posts
   # GET /posts.json
+
+  def find
+      @posts=Post.text_search(params[:search])
+    
+  end
   def index
     @posts = Post.all
   end
