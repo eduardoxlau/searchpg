@@ -5,11 +5,11 @@ class PostsController < ApplicationController
   # GET /posts.json
 
   def find
-      @posts=Post.text_search(params[:search])
+      @posts=Post.text_search(params[:search]).paginate(:page => params[:page], :per_page => 10)
     
   end
   def index
-    @posts = Post.all
+    @posts = Post.all.paginate(:page => params[:page], :per_page => 10)
   end
 
   # GET /posts/1
